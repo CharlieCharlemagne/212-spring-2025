@@ -1,5 +1,3 @@
-# Data Structures (Spring 25)
-
 # Lab 1 (01/28/2025)
 The goal of this lab is to get you familiar with the tools we will be using in this course, and to review some basic C++ concepts.  You will practice working with pointers, dynamic memory allocation, and C-style arrays.  Make sure to follow the instructions carefully and ask for help if you get stuck.
 
