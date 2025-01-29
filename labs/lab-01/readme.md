@@ -112,7 +112,7 @@ int *ptr = new int; // allocate memory for a single integer
 int *arr = new int[10]; // allocate memory for an array of 10 integers
 
 delete ptr; // free memory for a single integer
-delete[] arr; // free memory for an array of integers
+delete [] arr; // free memory for an array of integers
 ```
 
 *Double pointers* are pointers that point to other pointers.  They are useful when you need to store the address of a pointer, or when you need to create an array of pointers.  They follow the same idea as regular pointers, i.e., they are pointer variables that store memory addresses, in this case, the memory addresses of other pointers.  The syntax is as follows:
@@ -152,8 +152,8 @@ void shuffler(int size) {
     // 3. follow the pointers to print the values in shuffled order
     
     // clean up memory
-    delete[] numbers;
-    delete[] pointers;
+    delete [] numbers;
+    delete [] pointers;
 }
 
 int main() {
