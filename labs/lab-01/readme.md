@@ -75,7 +75,7 @@ Complete the following source file to practice reversing an array using pointers
 void reverse(int* arr, int size) {
     // TODOs
 
-    // use to pointers to reverse the array (start and end)
+    // use two pointers to reverse the array (start and end)
     // one pointer should point to the first element
     // and the other to the last element
 
