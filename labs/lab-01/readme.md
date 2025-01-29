@@ -103,7 +103,9 @@ Compile and run your code using `g++` on the command line.  You can also trace y
 
 ## Programming exercise with pointers
 
-*Dynamic memory allocation* is a powerful feature in C++ that allows you to allocate memory at execution time.  This is useful when you don't know the size of the data you need to store until the program is running.  In C++, you can use the `new` operator to allocate memory for a single variable or an array of variables, and you can use the `delete` operator to free the memory when you are done with it.  The syntax is as follows:
+*Dynamic memory allocation* is a powerful feature in C++ that allows you to allocate memory at execution time.  This is useful, for example,  when you don't know the size of the data you need to store until the program is running.  A critical aspect of memory management in C++ revolves around manual memory deallocation. When a programmer allocates memory using the `new` operator, they assume direct responsibility for subsequently freeing that memory through the corresponding `delete` operator. The significance of this responsibility cannot be overstated. Failure to properly deallocate memory leads to `memory leaks`, where allocated memory remains unavailable for reuse by the program, potentially causing system performance degradation over time.
+
+In C++, you can use the `new` operator to allocate memory for a single variable or an array of variables, and you can use the `delete` operator to free the memory when you are done with it.  The syntax is as follows:
 
 ```cpp
 int *ptr = new int; // allocate memory for a single integer
