@@ -146,7 +146,9 @@ void shuffler(int size) {
     // TODOs:
     // 1. randomly shuffle the array of pointers, the array of numbers
     //    should remain unchanged. you can use the std::shuffle function
-    //    from the <algorithm> header
+    //    from the <algorithm> and <random> headers, here is an example:
+    //    shuffle (p, p+n, std::default_random_engine(0))
+    //    where p is a pointer to the array and n is the array's length
     // 2. print both arrays and inspect the results, memory addresses
     //    should be printed in hexadecimal format
     // 3. follow the pointers to print the values in shuffled order
