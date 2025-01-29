@@ -72,7 +72,7 @@ Complete the following source file to practice reversing an array using pointers
 ```cpp
 #include <iostream>
 
-void reverse(int* arr, int size) {
+void reverse(int *arr, int size) {
     // TODOs
 
     // use two pointers to reverse the array (start and end)
@@ -134,7 +134,7 @@ void shuffler(int size) {
     int *numbers = new int[size];
 
     // create an array of pointers to integers
-    int **pointers = new int*[size];
+    int **pointers = new int *[size];
 
     // initialize the array of integers with values from 1 to size
     // and the array of pointers with the addresses of the integers
