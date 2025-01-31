@@ -31,7 +31,7 @@ your questions on [Ed](https://edstem.org/).
 ## Problems
 
 All problems are available via the 
-[Kattis](https://uri.kattis.com/courses/CSC212/Spring25) platform.  
+[Kattis](https://uri.kattis.com/courses/CSC212/Spring25) platform. 
 Details on how to get access, join the assignments, and submit 
 your solutions were provided via an Ed announcement (*Assignment 0*).  
 
