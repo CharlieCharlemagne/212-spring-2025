@@ -30,9 +30,10 @@ your questions on [Ed](https://edstem.org/).
 
 ## Problems
 
-All problems are available via the Kattis platform.  Details on how
-to get access, join the assignments, and submit your solutions were
-provided via an Ed announcement (*Assignment 0*).  
+All problems are available via the 
+[Kattis](https://uri.kattis.com/courses/CSC212/Spring25) platform.  
+Details on how to get access, join the assignments, and submit 
+your solutions were provided via an Ed announcement (*Assignment 0*).  
 
 Problems are numbered from A to I, ordered by difficulty.  There are
 a number of problems that are simple enough to be solved in a few
