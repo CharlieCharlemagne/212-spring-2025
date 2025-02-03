@@ -71,6 +71,8 @@ NOT attempted, you DON"T need to submit a file.
 The `screenshot.png` file should be a screenshot of the Kattis 
 results page showing the total score you achieved.  
 This is **mandatory** and will be used to determine your grade.
+Make sure it clearly includes your name and the points you
+earned for each problem.
 
 The `llm-usage.txt` file should contain a brief statement
 indicating whether you used a Large Language Model (LLM) to
