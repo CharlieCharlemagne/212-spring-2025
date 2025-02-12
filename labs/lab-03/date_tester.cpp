@@ -7,7 +7,7 @@ int main() {
     d1.print(); // should print 01/01/2000
 
     // create a Date object using the parameterized constructor
-    Date d2(12, 31, 1999);
+    Date d2(31, 12, 1999);
     d2.print(); // should print 12/31/1999
 
     d1.add_days(1);
