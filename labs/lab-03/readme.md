@@ -69,7 +69,7 @@ Consider the following private member functions:
 - a member function `days_in_month` that takes a month and year as
   parameters and returns the number of days in that month;
 - a member function `is_leap_year` that returns `true` if the year is a
-- leap year, and `false` otherwise;
+  leap year, and `false` otherwise;
 - a member function `add_one_day` that adds one day to the current date.
 
 ## Implementation details
