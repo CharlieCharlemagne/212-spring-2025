@@ -21,7 +21,9 @@ in your program.  In this lab, you will study the starter code provided and
 then complete the implementation of a class called `Date`.  Start by inspecting
 the class definition in `date.h`, then the implementation of the class methods
 in `date.cpp`, and finally study the `date-tester.cpp` file that shows 
-examples on how to create objects and use their defined methods.
+examples on how to create objects and use their defined methods. Take your
+time to understand the code.  Ask the TAs for help if necessary, or consult
+online resources.
 
 The class `Date` has the following data members:
 
