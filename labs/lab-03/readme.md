@@ -20,7 +20,7 @@ you to define a blueprint for objects that can be created and manipulated
 in your program.  In this lab, you will study the starter code provided and
 then complete the implementation of a class called `Date`.  Start by inspecting
 the class definition in `date.h`, then the implementation of the class methods
-in `date.cpp`, and finally study the `date-tester.cpp` file that shows 
+in `date.cpp`, and finally study the `date_tester.cpp` file that shows 
 examples on how to create objects and use their defined methods. Take your
 time to understand the code.  Ask the TAs for help if necessary, or consult
 online resources.
@@ -76,7 +76,7 @@ Consider the following private member functions:
 ## Implementation details
 
 The `Date` class must be defined in the `date.h` header file and implemented 
-in the `date.cpp` source file.  Additionally, you will work on a `date-tester.cpp` 
+in the `date.cpp` source file.  Additionally, you will work on a `date_tester.cpp` 
 file to test the functionality of the `Date` class.  Starter code is provided 
 in [this folder](#).  To ensure proper encapsulation, the data members of 
 the `Date` class should be private, and the member functions should be 
@@ -87,19 +87,19 @@ from the user of the class.
 
 Download the provided starter code, **read carefully each line of code**, 
 and complete the implementation of the `Date` class according to the 
-specifications outlined under the `TODO` comments.  The `date-tester.cpp` 
+specifications outlined under the `TODO` comments.  The `date_tester.cpp` 
 file contains a number of tests to verify that 
 your implementation works correctly.  
 
 To compile this project use the following command: 
-`g++ date.cpp date-tester.cpp -o date-tester`.  To run the compiled program, 
-use the command `./date-tester`.
+`g++ date.cpp date_tester.cpp -o date_tester`.  To run the compiled program, 
+use the command `./date_tester`.
 
 > [!IMPORTANT]
 > The recommended approach to complete this lab is to focus on one
 > member function at a time.  Implement each member function following
 > the order provided in the starter code, test the function using
-> `date-tester.cpp`, making sure it works correctly before moving
+> `date_tester.cpp`, making sure it works correctly before moving
 > on to the next member function.  This incremental approach will
 > help you catch and fix errors early in the development process.
 
@@ -114,5 +114,5 @@ If you have any questions, please ask the instructor or the TA for help.
 
 - `date.h`
 - `date.cpp`
-- `date-tester.cpp`: add comments to the top of the file with your name and answer the following question: What is the purpose of constructors and destructors in C++ classes?  Explain why the messages 'constructor called' and 'destructor called' are printed when your program is executed.
+- `date_tester.cpp`: add comments to the top of the file with your name and answer the following question: What is the purpose of constructors and destructors in C++ classes?  Explain why the messages 'constructor called' and 'destructor called' are printed when your program is executed.
 - `output.txt`: After you are done implementing the `Date` class and successfully passing all tests, redirect the output of your program to a text file using the command `./date_tester > output.txt`.
