@@ -6,17 +6,17 @@ class Date {
         int day;
         int month;
         int year;
+        // private methods
+        bool is_valid_date(int d, int m, int y);
+        int days_in_month(int m, int y);
+        bool is_leap_year(int y);
+        void add_one_day();
 
     public: // public member functions
         // constructors and destructor
         Date();
         Date(int d, int m, int y);
         ~Date();
-        // private methods
-        bool is_valid_date(int d, int m, int y);
-        int days_in_month(int m, int y);
-        bool is_leap_year(int y);
-        void add_one_day();
         // public methods
         void print();
         void add_days(int n);
