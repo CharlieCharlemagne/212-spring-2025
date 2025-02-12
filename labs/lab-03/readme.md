@@ -18,8 +18,12 @@ each student is expected to make an individual submission.
 Classes are a fundamental concept in object-oriented programming.  They allow 
 you to define a blueprint for objects that can be created and manipulated 
 in your program.  In this lab, you will study the starter code provided and
-then complete the implementation of a class called `Date`.  The class has the 
-following data members:
+then complete the implementation of a class called `Date`.  Start by inspecting
+the class definition in `date.h`, then the implementation of the class methods
+in `date.cpp`, and finally study the `date-tester.cpp` file that shows 
+examples on how to create objects and use their defined methods.
+
+The class `Date` has the following data members:
 
 - `day`: an integer representing the day of the month;
 - `month`: an integer representing the month of the year;
