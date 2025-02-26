@@ -52,14 +52,27 @@ store elements of any data type.  The `stack.h` file should contain the class
 definition, while the `stack.cpp` file should contain the implementation of
 the class member functions.
 
+> [!TIP]
+> Unlike regular classes, template classes need their implementation to be
+> visible to the compiler at the point of instantiation.  This means that
+> the implementation of the template class should either be in the header
+> file or included separately in the source file that uses the template class.
+> In this lab, we implement the `Stack` class in a separate `stack.cpp` file,
+> so we need to include the `stack.cpp` file into any source file that uses
+> the `Stack` class. To prevent duplicated definitions, we should use the
+> preprocessor directive `#ifndef` in `stach.h` to avoid multiple inclusions 
+> of the same header file.
+
 ### Step 2: Test the Stack class
 
 Create a `stack_tester.cpp` file to test the functionality of the `Stack` class.
-The `stack_tester.cpp` file should include the `stack.h` header file and test
-the functionality of the `Stack` class as follows:
+The `stack_tester.cpp` file should include the `stack.h` header file and also
+the `stack.cpp` file, due to the way we implemented the template class.
+THe tester program should test the functionality of the `Stack` class as follows:
 
 ```cpp
 #include "stack.h"
+#include "stack.cpp"
 #include <iostream>
 #include <stdexcept>
 
@@ -89,12 +102,14 @@ int main() {
 }
 ```
 
-After compiling your project with `g++ stack.cpp stack_tester.cpp -o stack_tester`,
+After compiling your project with `g++ stack_tester.cpp -o stack_tester`,
 run the program using `./stack_tester`.  The program should pring the numbers
 `9 8 7 6 5 4 3 2 1 0` and then terminate with an error caused by the `std::length_error`
 exception thrown when the stack is full.
 
-Now you will enclose the loop that fills the `s2` stack in a `try-catch` block to
+After verifying that the program works as expected, now you can modify the
+`stack_tester.cpp` file to handle the exception thrown when the stack is full.
+Enclose the loop that fills the `s2` stack in a `try-catch` block to
 handle the exception.  The `catch` block should print an error message and
 continue with the program.
 
@@ -131,6 +146,12 @@ Create a `expression_evaluator.cpp` file to implement the two-stack algorithm
 and evaluate the input expression.  The program should read the input expression
 from the command line and print the result to the console.  You can use the
 `std::stoi` function to convert a string to an integer.
+
+> [!TIP]
+> In some terminals, you may need to enclose the expression in double
+> quotes to prevent the shell from interpreting the parentheses as special
+> characters.  For example, you can run the program with the command
+> `./expression_evaluator "(1 + (2 * 3))"`.
 
 Make sure to test your program with different input expressions to verify
 that it evaluates them correctly.
