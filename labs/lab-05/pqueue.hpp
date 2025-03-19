@@ -3,6 +3,7 @@
 
 #include <cstddef>
 #include <stdexcept>
+#include <vector>
 
 // - class implements a priority queue using a MAX binary heap
 // each element in `arr` is a value that will be used as the key;
