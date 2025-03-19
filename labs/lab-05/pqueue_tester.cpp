@@ -32,9 +32,9 @@ int main(int argc, char **argv) {
     std::vector<int> vec = {10, 35, 15, 25, 20, 30, 4, 5, 6, -100, 100};
     PriorityQueue<int> heap(50);
     heap.make_heap(vec);
-    while (!pq.empty()) {
-        std::cout << pq.front().first << ": " <<  pq.front().second << "\n";
-        pq.dequeue();
+    while (!heap.empty()) {
+        std::cout << heap.front() << "\n";
+        heap.dequeue();
     }
     std::cout << std::endl;
     
