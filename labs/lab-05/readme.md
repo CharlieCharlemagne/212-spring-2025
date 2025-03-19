@@ -112,8 +112,8 @@ while (std::cin >> value) {
 }
 ```
 
-`std::cin` will read integers from the `stdin` stream until
-the end of the file is reached.  
+In the loop above, `std::cin` will read integers from the `stdin` 
+stream until the end of the file is reached.  
 
 ### Step 3: Calculating the top-K elements
 
