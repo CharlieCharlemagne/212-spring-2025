@@ -130,6 +130,8 @@ void TestTraversals() {
     for (int i = -1 ; i >= -100 ; i-=5) {
         assert(list.at(i) == 100+i);
     }
+
+    std::cout << "Traversal tests passed." << std::endl;
 }
 
 void RunAllTests() {
