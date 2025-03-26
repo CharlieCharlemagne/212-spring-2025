@@ -13,19 +13,19 @@ void TestEmptyList() {
 void TestInsertions() {
     DoublyLinkedList list;
 
-    // Test insertFront
+    // test push_front
     list.push_front(10);
     assert(list.size() == 1);
     assert(list.front() == 10);
     assert(list.back() == 10);
     
-    // Test insertBack
+    // test push_back
     list.push_back(20);
     assert(list.size() == 2);
     assert(list.front() == 10);
     assert(list.back() == 20);
     
-    // Test insertAt middle position
+    // test push_at
     list.push_at(1, 15);
     assert(list.size() == 3);
     assert(list.at(0) == 10);
@@ -37,22 +37,23 @@ void TestInsertions() {
 
 void TestDeletions() {
     DoublyLinkedList list;
+
     list.push_back(10);
     list.push_back(20);
     list.push_back(30);
     list.push_back(40);
     
-    // Test removeFront
+    // test pop_front
     list.pop_front();
     assert(list.size() == 3);
     assert(list.front() == 20);
     
-    // Test removeBack
+    // test pop_back
     list.pop_back();
     assert(list.size() == 2);
     assert(list.back() == 30);
     
-    // Test removeAt
+    // test pop_at
     list.push_back(50);  // List: 20, 30, 50
     list.pop_at(1);     // Remove 30
     assert(list.size() == 2);
@@ -65,16 +66,16 @@ void TestDeletions() {
 void TestEdgeCases() {
     DoublyLinkedList list;
     
-    // Test single element list
+    // test single element list
     list.push_front(10);
     assert(list.front() == 10);
     assert(list.back() == 10);
     
-    // Test removing from single element list
+    // test removing from single element list
     list.pop_front();
     assert(list.empty() == true);
     
-    // Test operations after clearing
+    // test operations after clearing
     list.push_back(20);
     list.push_back(30);
     list.push_front(10);
@@ -83,6 +84,9 @@ void TestEdgeCases() {
     list.push_at(3, 60);
     list.clear();
     assert(list.empty() == true);
+    list.push_front(5);
+    assert(list.size() == 1);
+    assert(list.empty() == false);
     
     std::cout << "Edge case tests passed." << std::endl;
 }
@@ -91,26 +95,41 @@ void TestEdgeCases() {
 void TestSearchFunctionality() {
     DoublyLinkedList list;
     
-    // Test searching in empty list
+    // test searching in empty list
     assert(list.contains(10) == false);
     
-    // Populate list
     list.push_back(10);
     list.push_back(20);
     list.push_back(30);
     list.push_back(40);
     list.push_back(50);
     
-    // Test finding existing elements
+    // test finding existing elements
     assert(list.contains(10) == true);
     assert(list.contains(30) == true);
     assert(list.contains(50) == true);;
     
-    // Test searching for non-existent elements
+    // test searching for non-existent elements
     assert(list.contains(15) == false);
     assert(list.contains(100) == false);
     
     std::cout << "Basic search tests passed." << std::endl;
+}
+
+void TestTraversals() {
+    DoublyLinkedList list;
+
+    for (int i = 0 ; i < 100 ; i++) {
+        list.push_back(i);
+    }
+    // test forward traversal
+    for (int i = 0 ; i < 100 ; i+=10) {
+        assert(list.at(i) == i);
+    }
+    // test reverse traversal
+    for (int i = -1 ; i >= -100 ; i-=5) {
+        assert(list.at(i) == 100+i);
+    }
 }
 
 void RunAllTests() {
@@ -119,6 +138,7 @@ void RunAllTests() {
     TestDeletions();
     TestEdgeCases();
     TestSearchFunctionality();
+    TestTraversals();
 
     std::cout << "All tests passed." << std::endl;
 }
