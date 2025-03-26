@@ -29,7 +29,7 @@ doubly-linked list class that stores integer values, without using templates.  T
 - `pop_at`: removes the element at a given position `idx` in the list, it should throw a `std::out_of_range` exception if the index is invalid;
 - `back`: returns a copy of the last element in the list, it should throw a `std::out_of_range` exception if the list is empty;
 - `front`: returns a copy of the first element in the list, it should throw a `std::out_of_range` exception if the list is empty;
-- `at`: returns a copy of the element at a given position `idx` in the list, it should throw a `std::out_of_range` exception if the index is invalid;
+- `at`: returns a copy of the element at a given position `idx` in the list, it should throw a `std::out_of_range` exception if the index is invalid. Assume the first node is at index 0. If `idx` is positive, start from `head` and traverse the list forward until node at index `idx` is reached, if `idx` is negative, start from `tail` and traverse the list backward until node at index `idx` is reached. Note that the last node is at index -1, the second to last node is at index -2, and so on;
 - `size`: returns the number of elements in the list;
 - `empty`: returns `true` if the list is empty, and `false` otherwise;
 - `clear`: removes all elements from the list;
