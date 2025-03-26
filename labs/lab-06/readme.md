@@ -48,7 +48,7 @@ missing methods.
 After all methods have been completed, you can use the `dll_tester.cpp` 
 source file to test the functionality of the `DoublyLinkedList` class.  
 
-To compile your program, you can use the following command:
+To compile your program, use the following command:
 
 ```bash
 g++ -std=c++11 doublylinkedlist.cpp dll_tester.cpp -o prog
