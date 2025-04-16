@@ -29,10 +29,10 @@ We will be following closely the methods described in class.  The
 - `empty`: returns `true` if the BST is empty, and `false` otherwise;
 - `print_in_order`: prints the elements of the BST in increasing order.
 
-You can find starter code for the `BST` class in the `bst.hpp` file
+You can find starter code for the `BST` class in `bst.hpp`
 with most of the public/private member functions already defined.
-However, `get_height` is not implemented yet.  
-Your job is to carefully read the comments and the code provided 
+However, `get_height` is not implemented yet.  Your job is to carefully 
+read the comments and the code provided 
 in the `bst.hpp` file, and then implement the missing method.
 
 Note that for most **public** member functions, we also implement
