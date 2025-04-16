@@ -4,9 +4,6 @@ The goal of this lab is to implement a binary search tree class,
 and then use it to support a text processing task involving
 a dictionary of words. 
 
-While collaboration with peers is strongly recommended, 
-each student is expected to make an individual submission.
-
 > [!WARNING]
 > For this lab in particular, you are NOT ALLOWED to use LLMs (large language models)
 > such as Copilot, ChatGPT, etc.  You are allowed to use the internet to look
