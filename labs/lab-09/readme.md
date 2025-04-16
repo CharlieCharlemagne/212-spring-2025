@@ -91,7 +91,7 @@ itself. The entire file is in lower case, including all the proper names.
 - After processing the entire text (book), print the words that were *not found* in the dictionary in alphabetical order using the `print_in_order` method of the `BST` class.
 
 >[!NOTE]
-> You are provided an example of how to read a text file line by line and how to split the lines into valid words, removing all punctuation and special characters, in the `tokenizer.cpp` file.  Take a look and use it as a reference for your implementation.  You can copy and paste the code from `tokenizer.cpp` into your `find_words.cpp` file, adapting it as necessary.
+> You are provided an example of how to read a text file line by line and how to split the lines into valid words, removing all punctuation and special characters, in the `tokenize.cpp` file.  Take a look and use it as a reference for your implementation.  You can copy and paste the code from `tokenizer.cpp` into your `find_words.cpp` file, adapting it as necessary.
 
 ## Submission
 
