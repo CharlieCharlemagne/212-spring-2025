@@ -87,7 +87,7 @@ itself. The entire file is in lower case, including all the proper names.
 ### Step 2: Find words not in the dictionary
 
 - Within the same program, you will now open the provided text file `2600-0.txt`, which contains the contents of *War and Peace* by Leo Tolstoy, downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/2600);
-- Read the contents of the file line by line, ignore all punctuation and special characters, and convert all words to lower case. For each word (token) in the text, check if it exists in the BST (created in step 1), if the word does not exist in the BST, add it to another BST object called `not_found`, this will store all the words that are not found in the dictionary with no duplicates;
+- Read the contents of the file line by line, ignore all punctuation and special characters, and convert all words to lower case. For each processed word (token) in the text, check if it exists in the BST (created in step 1), if the word does not exist in the BST, add it to another BST object called `not_found`, this will store all the words that are not found in the dictionary with no duplicates;
 - After processing the entire text (book), print the words that were *not found* in the dictionary in alphabetical order using the `print_in_order` method of the `BST` class.
 
 >[!NOTE]
