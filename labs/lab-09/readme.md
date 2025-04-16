@@ -40,8 +40,8 @@ a corresponding **private** member function that does the actual work.
 This is a common practice to separate the interface
 from the implementation.  The **public** member function is
 usually a simple wrapper that calls the **private** member function
-with the appropriate parameters.  The **private** member 
-function, in the case of this BST implementation, are **recursive**
+with the appropriate parameters.  The **private** methods, 
+in the case of this BST implementation, are **recursive**
 and require a pointer to the current node as a parameter,
 not visible outside the class.
 
